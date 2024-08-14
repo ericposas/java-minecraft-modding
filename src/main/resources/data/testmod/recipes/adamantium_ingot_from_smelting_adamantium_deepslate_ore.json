@@ -5,7 +5,7 @@
   "experience": 3.0,
   "group": "adamantium_mod",
   "ingredient": {
-    "item": "testmod:adamantium_ore"
+    "item": "testmod:adamantium_deepslate_ore"
   },
   "result": {
     "id": "testmod:adamantium_ingot"

@@ -1,8 +1,9 @@
 package com.testmod.datagen;
 
-import com.testmod.registermods.ModBlocks;
-import com.testmod.registermods.ModItems;
-import com.testmod.registermods.ModPotions;
+import com.testmod.blocks.AdamantiumDeepslateOreBlock;
+import com.testmod.blocks.AdamantiumOreBlock;
+import com.testmod.blocks.BloodStone;
+import com.testmod.registermods.RegisterItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -21,16 +22,15 @@ public class TestModSimpleModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOCK1);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLOODSTONE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ADAMANTIUM_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ADAMANTIUM_DEEPSLATE_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(BloodStone.BLOOD_STONE);
+        blockStateModelGenerator.registerSimpleCubeAll(AdamantiumOreBlock.ADAMANTIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(AdamantiumDeepslateOreBlock.ADAMANTIUM_DEEPSLATE_ORE);
     }
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(
-                ModItems.ADAMANTIUM_CLAWS,
+                RegisterItems.ADAMANTIUM_CLAWS,
                 new Model(
                         Optional.of(new Identifier("item/generated")),
                         Optional.empty(),
@@ -38,7 +38,7 @@ public class TestModSimpleModelGenerator extends FabricModelProvider {
                 )
         );
         itemModelGenerator.register(
-                ModItems.HASTY_FOOD,
+                RegisterItems.ADAMANTIUM_INGOT,
                 new Model(
                         Optional.of(new Identifier("item/generated")),
                         Optional.empty(),
@@ -46,23 +46,7 @@ public class TestModSimpleModelGenerator extends FabricModelProvider {
                 )
         );
         itemModelGenerator.register(
-                ModPotions.RAGE_POTION_ITEM,
-                new Model(
-                        Optional.of(new Identifier("item/generated")),
-                        Optional.empty(),
-                        TextureKey.LAYER0
-                )
-        );
-        itemModelGenerator.register(
-                ModItems.ADAMANTIUM_INGOT,
-                new Model(
-                        Optional.of(new Identifier("item/generated")),
-                        Optional.empty(),
-                        TextureKey.LAYER0
-                )
-        );
-        itemModelGenerator.register(
-                ModItems.RAW_ADAMANTIUM,
+                RegisterItems.RAW_ADAMANTIUM,
                 new Model(
                         Optional.of(new Identifier("item/generated")),
                         Optional.empty(),

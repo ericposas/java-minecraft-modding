@@ -19,17 +19,15 @@ public class TestMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-		LOGGER.info("Sammich's mod loaded!");
+		LOGGER.info("Adamantium mod loaded!");
 
-		ModItems.initialize();
-		ModBlocks.initialize();
-		ModSoundEvents.initialize();
-		ModEffects.initialize();
-		ModPotions.initialize();
-		ModEntities.initialize();
+		RegisterBlocks.initialize();
+		RegisterItems.initialize();
+		RegisterSoundEvents.initialize();
 
 		LootTableModifications.initialize();
 
 		ModWorldGeneration.generateModWorldGen();
 	}
+
 }

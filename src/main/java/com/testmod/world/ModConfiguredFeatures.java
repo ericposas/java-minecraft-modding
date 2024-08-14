@@ -1,7 +1,8 @@
 package com.testmod.world;
 
 import com.testmod.TestMod;
-import com.testmod.registermods.ModBlocks;
+import com.testmod.blocks.AdamantiumDeepslateOreBlock;
+import com.testmod.blocks.AdamantiumOreBlock;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
@@ -24,8 +25,8 @@ public class ModConfiguredFeatures {
 
         List<OreFeatureConfig.Target> overworldAdamantiumOres =
                 List.of(
-                        OreFeatureConfig.createTarget(stoneReplaceables, ModBlocks.ADAMANTIUM_ORE.getDefaultState()),
-                        OreFeatureConfig.createTarget(deepslateReplaceables, ModBlocks.ADAMANTIUM_DEEPSLATE_ORE.getDefaultState())
+                        OreFeatureConfig.createTarget(stoneReplaceables, AdamantiumOreBlock.ADAMANTIUM_ORE.getDefaultState()),
+                        OreFeatureConfig.createTarget(deepslateReplaceables, AdamantiumDeepslateOreBlock.ADAMANTIUM_DEEPSLATE_ORE.getDefaultState())
                 );
 
         register(

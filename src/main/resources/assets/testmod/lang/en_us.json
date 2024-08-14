@@ -1,11 +1,8 @@
 {
   "block.testmod.adamantium_deepslate_ore": "Adamantium Deepslate Ore",
   "block.testmod.adamantium_ore": "Adamantium Ore",
-  "block.testmod.block1": "Crystal Block",
   "block.testmod.bloodstone": "Blood Stone",
-  "entity.testmod.zombiegeckolib": "GeckoLib Zombie",
+  "item.testmod.adamantium_claws": "Adamantium Claws",
   "item.testmod.adamantium_ingot": "Adamantium Ingot",
-  "item.testmod.claws": "Let's Go Bub.",
-  "item.testmod.hastyfood": "Hasty Fruit",
   "item.testmod.raw_adamantium": "Raw Adamantium"
 }

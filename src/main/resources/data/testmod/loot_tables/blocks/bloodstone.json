@@ -9,22 +9,22 @@
           "functions": [
             {
               "add": false,
-              "count": 3.0,
-              "function": "minecraft:set_count"
-            }
-          ],
-          "name": "minecraft:spider_eye"
-        },
-        {
-          "type": "minecraft:item",
-          "functions": [
-            {
-              "add": false,
               "count": 1.0,
               "function": "minecraft:set_count"
             }
           ],
           "name": "testmod:bloodstone"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spider_eye"
+        }
+      ],
+      "functions": [
+        {
+          "add": false,
+          "count": 4.0,
+          "function": "minecraft:set_count"
         }
       ],
       "rolls": 1.0

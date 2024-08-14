@@ -1,6 +1,7 @@
 package com.testmod.datagen;
 
-import com.testmod.registermods.ModBlocks;
+import com.testmod.blocks.AdamantiumDeepslateOreBlock;
+import com.testmod.blocks.AdamantiumOreBlock;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.block.Block;
@@ -26,14 +27,13 @@ public class TestModBlockTagProvider extends FabricTagProvider.BlockTagProvider 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(NeedsDiamondTag)
-                .add(ModBlocks.BLOCK1)
-                .add(ModBlocks.ADAMANTIUM_ORE)
-                .add(ModBlocks.ADAMANTIUM_DEEPSLATE_ORE)
+                .add(AdamantiumOreBlock.ADAMANTIUM_ORE)
+                .add(AdamantiumDeepslateOreBlock.ADAMANTIUM_DEEPSLATE_ORE)
                 .setReplace(false);
         getOrCreateTagBuilder(Mineable)
-                .add(ModBlocks.BLOCK1)
-                .add(ModBlocks.ADAMANTIUM_ORE)
-                .add(ModBlocks.ADAMANTIUM_DEEPSLATE_ORE)
+                .add(AdamantiumOreBlock.ADAMANTIUM_ORE)
+                .add(AdamantiumDeepslateOreBlock.ADAMANTIUM_DEEPSLATE_ORE)
                 .setReplace(false);
     }
+
 }

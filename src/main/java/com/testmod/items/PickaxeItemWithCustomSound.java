@@ -1,6 +1,6 @@
 package com.testmod.items;
 
-import com.testmod.registermods.ModSoundEvents;
+import com.testmod.registermods.RegisterSoundEvents;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -8,16 +8,12 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.StackReference;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemUsageContext;
 import net.minecraft.item.PickaxeItem;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.screen.slot.Slot;
-import net.minecraft.util.ActionResult;
 import net.minecraft.util.ClickType;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
-
-import java.util.Objects;
 
 public class PickaxeItemWithCustomSound extends PickaxeItem {
 
@@ -29,12 +25,12 @@ public class PickaxeItemWithCustomSound extends PickaxeItem {
     public boolean postHit(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         if (!target.getWorld().isClient()) {
             attacker.playSound(
-                    ModSoundEvents.SNIKT,
+                    RegisterSoundEvents.SNIKT,
                     1.5f,
                     1f
             );
             target.playSound(
-                    ModSoundEvents.GOOSH,
+                    RegisterSoundEvents.GOOSH,
                     1f,
                     1f
             );
@@ -54,7 +50,7 @@ public class PickaxeItemWithCustomSound extends PickaxeItem {
     public boolean postMine(ItemStack stack, World world, BlockState state, BlockPos pos, LivingEntity miner) {
         if (!world.isClient()) {
             miner.playSound(
-                    ModSoundEvents.SNIKT,
+                    RegisterSoundEvents.SNIKT,
                     1.5f,
                     1f
             );
@@ -65,7 +61,7 @@ public class PickaxeItemWithCustomSound extends PickaxeItem {
     @Override
     public boolean onClicked(ItemStack stack, ItemStack otherStack, Slot slot, ClickType clickType, PlayerEntity player, StackReference cursorStackReference) {
         if (player.getWorld().isClient()) {
-            player.playSound(ModSoundEvents.SNIKT, 1.5f, 0.9f);
+            player.playSound(RegisterSoundEvents.SNIKT, 1.5f, 0.9f);
         }
         return super.onClicked(stack, otherStack, slot, clickType, player, cursorStackReference);
     }

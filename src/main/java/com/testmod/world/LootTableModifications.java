@@ -1,7 +1,5 @@
 package com.testmod.world;
 
-import com.testmod.registermods.ModBlocks;
-import com.testmod.registermods.ModItems;
 import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.block.Blocks;
 import net.minecraft.item.Items;
