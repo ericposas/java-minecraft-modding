@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 150,
+  "experience": 3.0,
+  "group": "testmod_ingots",
+  "ingredient": {
+    "item": "testmod:adamantium_ore"
+  },
+  "result": {
+    "id": "testmod:adamantium_ingot"
+  }
+}

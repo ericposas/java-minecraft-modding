@@ -1,0 +1,22 @@
+{
+  "snikt": {
+    "sounds": [
+      "testmod:snikt"
+    ]
+  },
+  "squish": {
+    "sounds": [
+      "testmod:squish"
+    ]
+  },
+  "goosh": {
+    "sounds": [
+      "testmod:goosh"
+    ]
+  },
+  "splat": {
+    "sounds": [
+      "testmod:splat"
+    ]
+  }
+}
