@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "adamantium:raw_adamantium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "adamantium:raw_adamantium"
+  }
+}

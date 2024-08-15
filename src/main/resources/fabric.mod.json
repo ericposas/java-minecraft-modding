@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "testmod",
+	"id": "adamantium",
 	"version": "${version}",
 	"name": "Adamantium Mod",
 	"description": "Adds adamantium ores to the world gen and allows for crafting of powerful adamantium claws!",
@@ -12,26 +12,19 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/testmod/icon.png",
+	"icon": "assets/adamantium/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"fabric-datagen": [
-			"com.testmod.datagen.DatagenEntrypoint"
+			"com.adamantium.datagen.DatagenEntrypoint"
 		],
 		"main": [
-			"com.testmod.TestMod"
+			"com.adamantium.AdamantiumMod"
 		],
 		"client": [
-			"com.testmod.TestModClient"
+			"com.adamantium.AdamantiumModClient"
 		]
 	},
-	"mixins": [
-		"testmod.mixins.json",
-		{
-			"config": "testmod.client.mixins.json",
-			"environment": "client"
-		}
-	],
 	"depends": {
 		"fabricloader": ">=0.15.11",
 		"minecraft": "~1.20.6",

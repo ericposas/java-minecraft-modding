@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "a": {
+      "item": "adamantium:adamantium_ingot"
+    },
+    "d": {
+      "item": "minecraft:diamond"
+    }
+  },
+  "pattern": [
+    "aaa",
+    "aaa",
+    "ddd"
+  ],
+  "result": {
+    "count": 1,
+    "id": "adamantium:adamantium_claws"
+  }
+}

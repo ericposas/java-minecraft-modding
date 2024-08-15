@@ -1,0 +1,22 @@
+{
+  "snikt": {
+    "sounds": [
+      "adamantium:snikt"
+    ]
+  },
+  "squish": {
+    "sounds": [
+      "adamantium:squish"
+    ]
+  },
+  "goosh": {
+    "sounds": [
+      "adamantium:goosh"
+    ]
+  },
+  "splat": {
+    "sounds": [
+      "adamantium:splat"
+    ]
+  }
+}
