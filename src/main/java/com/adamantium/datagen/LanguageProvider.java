@@ -1,7 +1,7 @@
 package com.adamantium.datagen;
 
 import com.adamantium.blocks.*;
-import com.adamantium.registermods.RegisterItems;
+import com.adamantium.register.RegisterItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -24,5 +24,6 @@ public class LanguageProvider extends FabricLanguageProvider {
         translationBuilder.add(RegisterItems.ADAMANTIUM_CLAWS, "Adamantium Claws");
         translationBuilder.add(RawAdamantiumBlock.RAW_ADAMANTIUM_BLOCK, "Block of Raw Adamantium");
         translationBuilder.add(AdamantiumBlock.ADAMANTIUM_BLOCK, "Block of Adamantium");
+        translationBuilder.add(RegisterItems.ADAMANTIUM_NUGGET, "Adamantium Nugget");
     }
 }

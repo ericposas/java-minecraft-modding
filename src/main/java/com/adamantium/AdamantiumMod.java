@@ -1,6 +1,6 @@
 package com.adamantium;
 
-import com.adamantium.registermods.*;
+import com.adamantium.register.*;
 import com.adamantium.world.LootTableModifications;
 import com.adamantium.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;

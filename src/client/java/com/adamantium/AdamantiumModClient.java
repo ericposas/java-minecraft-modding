@@ -1,7 +1,7 @@
 package com.adamantium;
 
 import com.adamantium.entity.client.zombiegeckolib.ZombieGeckoLibRenderer;
-import com.adamantium.registermods.RegisterEntities;
+import com.adamantium.register.RegisterEntities;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 

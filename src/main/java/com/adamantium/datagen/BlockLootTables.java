@@ -1,8 +1,7 @@
 package com.adamantium.datagen;
 
 import com.adamantium.blocks.*;
-import com.adamantium.registermods.RegisterItems;
-import com.mojang.datafixers.kinds.Const;
+import com.adamantium.register.RegisterItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.minecraft.item.Items;

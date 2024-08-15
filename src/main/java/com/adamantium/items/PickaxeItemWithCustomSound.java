@@ -1,6 +1,6 @@
 package com.adamantium.items;
 
-import com.adamantium.registermods.RegisterSoundEvents;
+import com.adamantium.register.RegisterSoundEvents;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;

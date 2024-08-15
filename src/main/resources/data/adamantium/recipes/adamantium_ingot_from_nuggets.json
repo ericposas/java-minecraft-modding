@@ -2,17 +2,17 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "i": {
-      "item": "adamantium:adamantium_ingot"
+    "n": {
+      "item": "adamantium:adamantium_nugget"
     }
   },
   "pattern": [
-    "iii",
-    "iii",
-    "iii"
+    "nnn",
+    "nnn",
+    "nnn"
   ],
   "result": {
     "count": 1,
-    "id": "adamantium:adamantium_block"
+    "id": "adamantium:adamantium_ingot"
   }
 }

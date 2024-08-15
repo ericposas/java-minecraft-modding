@@ -1,4 +1,4 @@
-package com.adamantium.registermods;
+package com.adamantium.register;
 
 import com.adamantium.AdamantiumMod;
 import com.adamantium.items.PickaxeItemWithCustomSound;
@@ -13,28 +13,28 @@ import net.minecraft.util.Identifier;
 
 public class RegisterItems {
 
+    public static final Item ADAMANTIUM_NUGGET =
+            Registry.register(Registries.ITEM,
+                    new Identifier(AdamantiumMod.MOD_ID, "adamantium_nugget"),
+                    new Item(new Item.Settings()));
+
     public static final Item RAW_ADAMANTIUM =
-            Registry.register(
-                    Registries.ITEM,
+            Registry.register(Registries.ITEM,
                     new Identifier(AdamantiumMod.MOD_ID, "raw_adamantium"),
-                    new Item(new Item.Settings())
-            );
+                    new Item(new Item.Settings()));
 
     public static final Item ADAMANTIUM_INGOT =
-            Registry.register(
-                    Registries.ITEM,
+            Registry.register(Registries.ITEM,
                     new Identifier(AdamantiumMod.MOD_ID, "adamantium_ingot"),
-                    new Item(new Item.Settings())
-            );
+                    new Item(new Item.Settings()));
 
     public static final PickaxeItem ADAMANTIUM_PICKAXE_ITEM = new PickaxeItemWithCustomSound(
-                Adamantium.INSTANCE,
+            Adamantium.INSTANCE,
                 new Item.Settings().attributeModifiers(
-                        PickaxeItem.createAttributeModifiers(
-                                        Adamantium.INSTANCE,
-                                        8,
-                                        2.5F))
-        );
+                    PickaxeItem.createAttributeModifiers(
+                        Adamantium.INSTANCE,
+                        8,
+                        2.5F)));
 
     public static final Item ADAMANTIUM_CLAWS =
             Registry.register(

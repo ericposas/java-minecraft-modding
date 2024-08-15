@@ -1,7 +1,7 @@
 package com.adamantium.blocks;
 
 import com.adamantium.AdamantiumMod;
-import com.adamantium.registermods.RegisterSoundEvents;
+import com.adamantium.register.RegisterSoundEvents;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;

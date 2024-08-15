@@ -2,7 +2,7 @@ package com.adamantium.datagen;
 
 import com.adamantium.AdamantiumMod;
 import com.adamantium.blocks.*;
-import com.adamantium.registermods.RegisterItems;
+import com.adamantium.register.RegisterItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.data.server.recipe.RecipeExporter;
@@ -12,6 +12,7 @@ import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.util.Identifier;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -63,10 +64,10 @@ public class RecipesProvider extends FabricRecipeProvider {
                 .offerTo(exporter);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, AdamantiumBlock.ADAMANTIUM_BLOCK, 1)
-                .pattern("aaa")
-                .pattern("aaa")
-                .pattern("aaa")
-                .input('a', RegisterItems.ADAMANTIUM_INGOT)
+                .pattern("iii")
+                .pattern("iii")
+                .pattern("iii")
+                .input('i', RegisterItems.ADAMANTIUM_INGOT)
                 .criterion(FabricRecipeProvider.hasItem(RegisterItems.ADAMANTIUM_INGOT),
                         FabricRecipeProvider.conditionsFromItem(RegisterItems.ADAMANTIUM_INGOT))
                 .offerTo(exporter);
@@ -75,6 +76,20 @@ public class RecipesProvider extends FabricRecipeProvider {
                 .input(AdamantiumBlock.ADAMANTIUM_BLOCK, 1)
                 .criterion(FabricRecipeProvider.hasItem(AdamantiumBlock.ADAMANTIUM_BLOCK), FabricRecipeProvider.conditionsFromItem(AdamantiumBlock.ADAMANTIUM_BLOCK))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, RegisterItems.ADAMANTIUM_INGOT, 1)
+                .pattern("nnn")
+                .pattern("nnn")
+                .pattern("nnn")
+                .input('n', RegisterItems.ADAMANTIUM_NUGGET)
+                .criterion(FabricRecipeProvider.hasItem(RegisterItems.ADAMANTIUM_NUGGET),
+                        FabricRecipeProvider.conditionsFromItem(RegisterItems.ADAMANTIUM_NUGGET))
+                .offerTo(exporter, new Identifier(AdamantiumMod.MOD_ID, "adamantium_ingot_from_nuggets"));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, RegisterItems.ADAMANTIUM_NUGGET, 9)
+                .input(RegisterItems.ADAMANTIUM_INGOT, 1)
+                .criterion(FabricRecipeProvider.hasItem(RegisterItems.ADAMANTIUM_INGOT), FabricRecipeProvider.conditionsFromItem(RegisterItems.ADAMANTIUM_INGOT))
+                .offerTo(exporter, new Identifier(AdamantiumMod.MOD_ID, "adamantium_nuggets_from_ingot"));
 
         RecipeProvider.offerSmelting(
                 exporter,

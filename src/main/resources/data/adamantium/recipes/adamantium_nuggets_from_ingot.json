@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "adamantium:adamantium_ingot"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "adamantium:adamantium_nugget"
+  }
+}

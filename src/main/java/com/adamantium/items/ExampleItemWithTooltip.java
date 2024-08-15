@@ -8,7 +8,7 @@ import net.minecraft.util.Formatting;
 
 import java.util.List;
 
-public class ItemWithTooltip extends Item {
+public class ExampleItemWithTooltip extends Item {
 
     private String tooltipText;
 
@@ -20,7 +20,7 @@ public class ItemWithTooltip extends Item {
         return tooltipText;
     }
 
-    public ItemWithTooltip(Settings settings, String tooltipText) {
+    public ExampleItemWithTooltip(Settings settings, String tooltipText) {
         super(settings);
         setTooltipText(tooltipText);
     }

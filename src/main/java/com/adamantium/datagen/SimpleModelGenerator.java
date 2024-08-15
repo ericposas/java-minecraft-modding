@@ -1,8 +1,7 @@
 package com.adamantium.datagen;
 
-import com.adamantium.AdamantiumMod;
 import com.adamantium.blocks.*;
-import com.adamantium.registermods.RegisterItems;
+import com.adamantium.register.RegisterItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
@@ -30,29 +29,24 @@ public class SimpleModelGenerator extends FabricModelProvider {
 
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        itemModelGenerator.register(
-                RegisterItems.ADAMANTIUM_CLAWS,
-                new Model(
-                        Optional.of(new Identifier("item/generated")),
+        itemModelGenerator.register(RegisterItems.ADAMANTIUM_NUGGET,
+                new Model(Optional.of(new Identifier("item/generated")),
                         Optional.empty(),
-                        TextureKey.LAYER0
-                )
-        );
-        itemModelGenerator.register(
-                RegisterItems.ADAMANTIUM_INGOT,
-                new Model(
-                        Optional.of(new Identifier("item/generated")),
+                        TextureKey.LAYER0));
+
+        itemModelGenerator.register(RegisterItems.ADAMANTIUM_CLAWS,
+                new Model(Optional.of(new Identifier("item/generated")),
                         Optional.empty(),
-                        TextureKey.LAYER0
-                )
-        );
-        itemModelGenerator.register(
-                RegisterItems.RAW_ADAMANTIUM,
-                new Model(
-                        Optional.of(new Identifier("item/generated")),
+                        TextureKey.LAYER0));
+
+        itemModelGenerator.register(RegisterItems.ADAMANTIUM_INGOT,
+                new Model(Optional.of(new Identifier("item/generated")),
                         Optional.empty(),
-                        TextureKey.LAYER0
-                )
-        );
+                        TextureKey.LAYER0));
+
+        itemModelGenerator.register(RegisterItems.RAW_ADAMANTIUM,
+                new Model(Optional.of(new Identifier("item/generated")),
+                        Optional.empty(),
+                        TextureKey.LAYER0));
     }
 }

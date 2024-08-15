@@ -1,4 +1,4 @@
-package com.adamantium.registermods;
+package com.adamantium.register;
 
 import com.adamantium.AdamantiumMod;
 import com.adamantium.effects.RageEffect;

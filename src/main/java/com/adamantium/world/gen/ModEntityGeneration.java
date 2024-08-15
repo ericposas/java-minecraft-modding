@@ -1,6 +1,6 @@
 package com.adamantium.world.gen;
 
-import com.adamantium.registermods.RegisterEntities;
+import com.adamantium.register.RegisterEntities;
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.minecraft.entity.SpawnGroup;
